@@ -7,11 +7,10 @@
   font-size: 1.6rem;
   line-height: 1.7;
   background-image: linear-gradient(
-      to right top,
-      rgba(rgb(0, 0, 0), 0.9),
-      rgba($color-primary, 0.4)
-    ),
-    url("../img/blg.jpg");
+    to right top,
+    rgba(rgb(0, 0, 0), 0.9),
+    rgba($color-primary, 0.4)
+  );
 
   &__heading {
     display: flex;

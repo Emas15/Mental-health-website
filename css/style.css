@@ -314,7 +314,7 @@ order: base + typography > general layout + grid > page layout > components
   padding: 4rem;
   font-size: 1.6rem;
   line-height: 1.7;
-  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.9), rgba(86, 67, 250, 0.4)), url("../img/blg.jpg"); }
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.9), rgba(86, 67, 250, 0.4)); }
   .blog__heading {
     display: flex;
     justify-content: center;
@@ -448,7 +448,7 @@ order: base + typography > general layout + grid > page layout > components
   flex-direction: column;
   align-items: center;
   padding: 9rem 2rem;
-  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.9), rgba(86, 67, 250, 0.4)), url("../img/faq1.jpg");
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.9), rgba(86, 67, 250, 0.4));
   background-size: cover;
   background-position: center;
   min-height: 80rem; }
