@@ -1556,7 +1556,8 @@ nav li:first-child {
   border-radius: 5px;
   transition: background 0.3s ease;
   display: inline-block;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  font-size: 1.8rem; }
 
 .cta-button:hover {
   background: #45a049;
@@ -1592,7 +1593,8 @@ nav li:first-child {
   .detailss ul {
     font-size: 1rem; }
   .cta-button {
-    padding: 0.7rem 1.2rem; }
+    padding: 0.7rem 1.2rem;
+    font-size: 1.6rem; }
   .detailss .video-background {
     margin-left: 0;
     /* Remove margin for small screens */ } }
@@ -1617,7 +1619,8 @@ nav li:first-child {
     font-size: 0.9rem; }
   .cta-button {
     padding: 0.6rem 1rem;
-    font-size: 0.9rem; }
+    font-size: 1.4rem;
+    width: 50%; }
   .detailss .video-background {
     margin-left: 0;
     /* Remove margin for extra small screens */ } }
