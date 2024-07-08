@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Title</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+              fill="#fff"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Dr. Sohalia Ahmad</a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="training.html">Training</a></li>
+        <li class="hideOnMobile"><a href="contact.html">contact</a></li>
+        <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+              fill="#fff"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="intro">
+      <h1>Manage Your Stress with Proper Training</h1>
+      <img src="img/andrew-tate.jpg" alt="Stress Management Training" />
+      <!-- Replace with an actual image URL -->
+    </section>
+
+    <section class="detailss">
+      <div class="video-background">
+        <video autoplay muted loop>
+          <source src="img/bgvv.mp4" type="video/mp4" />
+          <!-- Replace with the actual video file -->
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="container">
+        <div class="text-overlay">
+          <h2>About the Training</h2>
+          <p>
+            This comprehensive stress management training will teach you
+            techniques and strategies to handle stress effectively. You'll learn
+            how to identify stressors, manage your responses, and maintain a
+            healthy balance in your life.
+          </p>
+
+          <h3>What You'll Learn</h3>
+          <ul>
+            <li>Understanding Stress: What it is and how it affects you</li>
+            <li>
+              Identifying Stressors: Recognizing the sources of your stress
+            </li>
+            <li>
+              Stress Reduction Techniques: Practical methods to manage stress
+            </li>
+            <li>
+              Mindfulness and Relaxation: Tools to help you stay calm and
+              focused
+            </li>
+            <li>
+              Creating a Balanced Life: Strategies for maintaining a healthy
+              work-life balance
+            </li>
+          </ul>
+
+          <h3>Why Attend?</h3>
+          <p>
+            By attending this training, you'll gain valuable insights and
+            practical skills to manage stress effectively. This can lead to
+            improved mental and physical health, better productivity, and a more
+            fulfilling life.
+          </p>
+
+          <a href="#signup" class="cta-button">Enroll Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__row">
+        <div class="footer__col">
+          <h1 class="footer__logo">Dr Sohalia Ahmad</h1>
+          <p class="ftdesc">
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Minima impedit illum ad sint <br />
+            corporis repellendus, natus corrupti perferendis <br />
+            eligendi dolores modi! Eos minus a aut adipisci <br />
+            aliquam totam asperiores eveniet?
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h3>
+            chamber
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Address 1 road house street floor</p>
+          <p>Address 2 post something something</p>
+          <p>Adress 3 sector thana</p>
+          <p class="email">example@gmail.com</p>
+          <h4>012224532</h4>
+        </div>
+        <div class="footer__col">
+          <h3>
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Consultancy</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>
+            Contact Us
+            <div class="underline"><span></span></div>
+          </h3>
+          <form class="footer__form">
+            <i class="far fa-envelope"></i>
+            <input
+              class="int"
+              type="email"
+              placeholder="Enter your email id"
+              required
+            />
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+
+          <div class="footer__social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Byteform © 2024 - All Rights Reserved</p>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

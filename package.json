@@ -1,0 +1,14 @@
+{
+  "name": "servweb",
+  "version": "1.0.0",
+  "description": "project for our client",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Siam",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

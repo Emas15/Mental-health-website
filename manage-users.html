@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style-admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <div class="admin-container-custom">
+      <aside class="sidebar-custom">
+        <nav class="sidebar-nav-custom">
+          <ul class="sidebar-ul-custom">
+            <li class="sidebar-li-custom">
+              <a class="sidebar-a-custom" href="manage-users.html"
+                >Manage Users</a
+              >
+            </li>
+            <li class="sidebar-li-custom">
+              <a class="sidebar-a-custom" href="manage-posts.html"
+                >Manage Posts</a
+              >
+            </li>
+            <li class="sidebar-li-custom">
+              <a class="sidebar-a-custom" href="create-post.html"
+                >Create Post</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content-custom">
+        <section id="manage-users-custom" class="admin-section-custom">
+          <h2>Manage Users</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>123-456-7890</td>
+                <td>True</td>
+                <td><button class="btn-delete-custom">Delete</button></td>
+              </tr>
+              <!-- Add more users as needed -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

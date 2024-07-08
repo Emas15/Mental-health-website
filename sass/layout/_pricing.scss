@@ -1,0 +1,265 @@
+.price {
+  background-image: radial-gradient(#ffffff 50%, #807ed3 100%);
+}
+.container-p {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 3.6rem; /* Added padding-top to account for the fixed header */
+  min-height: calc(100vh - 10rem); /* Adjust to ensure content fits */
+  box-sizing: border-box;
+  margin-top: -0.8rem;
+  margin-bottom: 4rem;
+}
+
+.header-p {
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 2.5rem;
+}
+
+.content-p {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.left-box-p {
+  padding: 20px;
+  border: 2px solid #145063;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.right-box-p {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.right-box-top-p,
+.price-section-p {
+  padding: 20px;
+  border: 2px solid #145063;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.right-box-top-p img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icons-p {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.icons-p span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px;
+  background-color: #145063;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icons-p span i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.icons-p span:hover {
+  background-color: #00517c;
+  color: #fff;
+}
+
+.price-section-p {
+  padding: 18px;
+  border: 2px solid #036400;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.price-section-p h3 {
+  margin: 0;
+}
+
+.price-section-p p {
+  margin: 10px 0;
+  position: relative;
+}
+
+.price-section-p p .discp {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 2rem;
+}
+
+.button-p {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: rgb(36, 138, 27);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
+  font-size: 2.4rem;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.button-p:hover {
+  transform: scale(1.1);
+  background-color: rgb(26, 108, 21);
+}
+
+.heading-p {
+  background: linear-gradient(to right, #031136, #0040a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 36px;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heading-p:hover {
+  transform: rotate(-5deg);
+}
+
+.discp {
+  font-size: 2rem;
+}
+
+.desc-p--1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.desc-p--2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.img-p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #a31212;
+}
+
+.p-p {
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container-p {
+    padding: 10px;
+  }
+
+  .header-p {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-p {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .left-box-p {
+    margin-bottom: 20px;
+  }
+
+  .right-box-p {
+    grid-template-rows: auto;
+  }
+
+  .right-box-top-p,
+  .price-section-p {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-p {
+    padding-bottom: 10rem; /* Adjust padding-bottom to ensure content doesn't go under the footer */
+    min-height: calc(100vh - 8rem); /* Adjust to ensure content fits */
+  }
+
+  .header-p {
+    margin-top: 4rem;
+  }
+
+  .price-section-p p .discp {
+    font-size: 1.5rem;
+  }
+
+  .button-p {
+    width: 70%;
+    font-size: 2.4rem;
+  }
+
+  .desc-p--1,
+  .desc-p--2 {
+    font-size: 1.5rem;
+  }
+
+  .img-p {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    margin-top: 1rem; /* Adjust the margin-top for smaller screens */
+  }
+  h1 {
+    margin-top: 8.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-p {
+    min-height: calc(100vh - 6rem); /* Adjust to ensure content fits */
+  }
+
+  .header-p {
+    margin-top: 2rem;
+  }
+
+  .price-section-p p .discp {
+    font-size: 1.2rem;
+  }
+
+  .button-p {
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .desc-p--1,
+  .desc-p--2 {
+    font-size: 1.2rem;
+  }
+
+  .img-p {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    margin-top: 1.5rem; /* Adjust the margin-top for smaller screens */
+  }
+  h1 {
+    margin-top: 6rem;
+  }
+}

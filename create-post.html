@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style-admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <div class="admin-container-custom">
+      <aside class="sidebar-custom">
+        <nav class="sidebar-nav-custom">
+          <ul class="sidebar-ul-custom">
+            <li class="sidebar-li-custom">
+              <a class="sidebar-a-custom" href="manage-users.html"
+                >Manage Users</a
+              >
+            </li>
+            <li class="sidebar-li-custom">
+              <a class="sidebar-a-custom" href="manage-posts.html"
+                >Manage Posts</a
+              >
+            </li>
+            <li class="sidebar-li-custom">
+              <a class="sidebar-a-custom" href="create-post.html"
+                >Create Post</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content-custom">
+        <section id="create-post-custom" class="admin-section-custom">
+          <h2>Create Post</h2>
+          <button id="openModal-custom" class="btn-open-modal-custom">
+            Create Post
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="modal-custom" class="modal-custom">
+      <div class="modal-content-custom">
+        <span class="close-custom">&times;</span>
+        <form>
+          <label for="post-title-custom">Title</label>
+          <input
+            type="text"
+            id="post-title-custom"
+            name="post-title-custom"
+            required
+          />
+
+          <label for="post-date-custom">Date</label>
+          <input
+            type="date"
+            id="post-date-custom"
+            name="post-date-custom"
+            required
+          />
+
+          <label for="post-description-custom">Description</label>
+          <textarea
+            id="post-description-custom"
+            name="post-description-custom"
+            required
+          ></textarea>
+
+          <label for="post-image-custom">Image</label>
+          <input
+            type="file"
+            id="post-image-custom"
+            name="post-image-custom"
+            accept="image/*"
+            required
+          />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

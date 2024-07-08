@@ -1,0 +1,123 @@
+.hero-section.sidebar-open {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+/* Rest of your existing styles remain unchanged */
+nav {
+  background-color: $color-primary;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Make the navbar fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  background-color: #2b0644;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially off-screen */
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(86, 67, 250, 0.3); /* Semi-transparent #5643fa */
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: transform 0.3s ease-in-out, right 0.3s ease-in-out; /* Add transition for transform and right */
+}
+
+.sidebar.open {
+  right: 0; /* Slide in when sidebar is open */
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 200px; /* Adjust width for medium-sized screens */
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%; /* Full width for very small screens */
+    max-width: 250px; /* Maximum width to prevent sidebar from spanning entire screen */
+  }
+}
+@media (min-width: 801px) and (max-width: 886px) {
+  nav a {
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+              fill="#fff"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Dr. Sohalia Ahmad</a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="training.html">Training</a></li>
+        <li class="hideOnMobile"><a href="contact.html">contact</a></li>
+        <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+              fill="#fff"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="contact">
+      <div class="contactUs">
+        <div class="contact__title">
+          <h2>Get your Serial</h2>
+        </div>
+        <div class="contact__box">
+          <!--form-->
+          <div class="contact__form concat">
+            <h3>Fill up the Form</h3>
+            <form>
+              <div class="formBox">
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>First name</span>
+                    <input type="text" placeholder="Ajlan" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Last name</span>
+                    <input type="text" placeholder="Mahee" />
+                  </div>
+                </div>
+                <div class="row50">
+                  <div class="inputBox">
+                    <span>Email</span>
+                    <input type="text" placeholder="Ajlan@gmail.com" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Mobile</span>
+                    <input type="text" placeholder="+8801234567890" />
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="inputBox">
+                    <span>Message</span>
+                    <textarea
+                      placeholder="Write your message here..."
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row50">
+                  <div class="inputBox">
+                    <input type="submit" value="Send" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--info box-->
+          <div class="contact__info concat">
+            <h3>Contact Info</h3>
+            <div class="infoBox">
+              <div>
+                <span><ion-icon name="location"></ion-icon></span>
+                <p class="loc">Somewhere, Dhaka<br />Bangladesh</p>
+              </div>
+              <div>
+                <span><ion-icon name="mail"></ion-icon></span>
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
+              </div>
+              <div>
+                <span><ion-icon name="call"></ion-icon></span>
+                <a href="tel:+880132342421">+88 013 234 2421</a>
+              </div>
+              <!--social media-->
+              <ul class="sci">
+                <li>
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </li>
+                <li>
+                  <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--map-->
+          <div class="contact__map concat">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.376542695084!2d90.39035027602054!3d23.733948278681677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c88cc8b5a5%3A0x8db39495648a17e2!2sDepartment%20of%20Psychology!5e0!3m2!1sen!2sbd!4v1719424872885!5m2!1sen!2sbd"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="footer">
+      <div class="footer__row">
+        <div class="footer__col">
+          <h1 class="footer__logo">Dr. Sohalia Ahmad</h1>
+          <p class="ftdesc">
+            Lorem ipsum dolor sit amet consectetur<br />
+            adipisicing elit. Minima impedit illum ad sint<br />
+            corporis repellendus, natus corrupti perferendis<br />
+            eligendi dolores modi! Eos minus a aut adipisci<br />
+            aliquam totam asperiores eveniet?
+          </p>
+        </div>
+        <div class="footer__col">
+          <h3>
+            Chamber
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Address 1 road house street floor</p>
+          <p>Address 2 post something something</p>
+          <p>Address 3 sector thana</p>
+          <p class="email">example@gmail.com</p>
+          <h4>012224532</h4>
+        </div>
+        <div class="footer__col">
+          <h3>
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Consultancy</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>
+            Contact Us
+            <div class="underline"><span></span></div>
+          </h3>
+          <form class="footer__form">
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Enter your email id" required />
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="footer__social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Byteform © 2024 - All Rights Reserved</p>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
