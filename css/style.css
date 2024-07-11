@@ -1413,7 +1413,8 @@ nav li:first-child {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: calc(33.333% - 20px);
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; }
   .card:hover {
     transform: scale(1.05); }
   .card img {
@@ -1439,7 +1440,8 @@ nav li:first-child {
       background-color: #007bff;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px; }
+      border-radius: 5px;
+      text-align: center; }
 
 .blog-post {
   margin-top: 10rem !important;
@@ -1471,14 +1473,12 @@ nav li:first-child {
     width: calc(33.333% - 20px); }
 
 @media (max-width: 992px) {
-  .card,
-  .recent-posts .card {
-    width: calc(50% - 20px); } }
-
-@media (max-width: 768px) {
-  .card,
-  .recent-posts .card {
-    width: 100%; } }
+  .cards {
+    flex-direction: column;
+    /* Stack cards vertically */ }
+  .card {
+    width: 100% !important;
+    /* Full width for each card on smaller screens */ } }
 
 .intro {
   text-align: center;
